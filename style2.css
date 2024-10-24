@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100%;
+}
+
 #container {
-    width: 100 %;
+    width: 100%;
     margin: 0px auto;
     background-color: rgb(229, 178, 153);
     margin-bottom: 0px;
@@ -155,7 +159,7 @@ a:active {
 }
 
 .wrapper {
-    min-height: 4%;
+    min-height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
