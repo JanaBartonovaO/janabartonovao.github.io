@@ -5,23 +5,33 @@
     <link rel="stylesheet" href="style2.css" class="css" />
     <title>Document</title>
     <style>
-        .highlight {
-            background-color: rgb(206, 138, 83);
+        .polaroid { 
+            position: relative; 
+            width: 250px; 
+            padding: 10px; 
+            background: white; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            margin: 20px auto; 
+            text-align: center; 
+            transition: transform 0.5s; 
+        }
 
-         display: inline;
-      }
-      /* Vlnění */ 
-        @keyframes wave { 
-            0% { transform: rotate(0deg); } 
-            25% { transform: rotate(1deg); } 
-            50% { transform: rotate(0deg); } 
-            75% { transform: rotate(-1deg); } 
-            100% { transform: rotate(0deg); } 
+        .polaroid img { 
+            display: block; 
+            width: 100%; 
+            height: auto; 
         } 
-        .wave { 
-            display: inline-block; 
-            animation: wave 1.5s infinite; 
+        
+        .polaroid:hover { 
+            transform: rotate(-5deg); 
         } 
+        
+        .caption { 
+            margin-top: 10px; 
+            font-size: 14px; 
+            color: gray; 
+        }
+
     </style>
     
     </head>
@@ -35,7 +45,7 @@
         <main class="page-body">
             <h2>Jana Bartoňová O.</h2>
             <div id="foto">
-                <img src="images/obrazek.jpg" alt="Fotografie Jana" class="wave"/>
+                <img src="images/obrazek.jpg" alt="Fotografie Jana" class="polaroid"/>
             </div>
         </main>
 
