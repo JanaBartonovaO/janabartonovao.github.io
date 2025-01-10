@@ -10,10 +10,24 @@
 
          display: inline;
       }
+      /* Vlnění */ 
+        @keyframes wave { 
+            0% { transform: rotate(0deg); } 
+            25% { transform: rotate(1deg); } 
+            50% { transform: rotate(0deg); } 
+            75% { transform: rotate(-1deg); } 
+            100% { transform: rotate(0deg); } 
+        } 
+        .wave { 
+            display: inline-block; 
+            animation: wave 1.5s infinite; 
+        } 
     </style>
+    
     </head>
 
     <body>
+       
     <div id="container" class="wrapper">
         <header class="page-header">
             <h1>Vítejte na mých stránkách</h1>
@@ -21,7 +35,7 @@
         <main class="page-body">
             <h2>Jana Bartoňová O.</h2>
             <div id="foto">
-                <img src="images/obrazek.jpg" alt="Fotografie Jana" />
+                <img src="images/obrazek.jpg" alt="Fotografie Jana" class="wave"/>
             </div>
         </main>
 

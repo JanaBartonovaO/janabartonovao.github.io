@@ -156,3 +156,9 @@ a:active {
     grid-template-rows: auto 1fr auto;
 }
 
+a {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
