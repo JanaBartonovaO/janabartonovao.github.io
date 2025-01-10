@@ -4,12 +4,15 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100%;
+}
+
 #container {
-    width: 100 %;
+    width: 100%;
     margin: 0px auto;
     background-color: rgb(229, 178, 153);
     margin-bottom: 0px;
-
 }
 
 #delsi_text {
@@ -55,7 +58,6 @@ main h5 {
     margin-top: 0px;
 }
 
-
 main p {
     background: rgb(229, 178, 153);
     margin-bottom: 20px;
@@ -64,7 +66,6 @@ main p {
     margin-right: 80px;
     text-align: center;
 }
-
 
 #blog {
     display: block;
@@ -90,7 +91,6 @@ main p {
     margin-bottom: 50px;
 }
 
-
 #foto2 img {
     display: block;
     width: 100%;
@@ -109,14 +109,11 @@ main p {
     margin-bottom: 50px;
 }
 
-
 nav {
     background: rgb(206, 138, 83);
-
 }
 
 nav ul {
-
     margin: 0px auto;
 }
 
@@ -131,9 +128,7 @@ nav ul li {
 
 nav ul li a:hover {
     border-bottom: 2px solid brown;
-
 }
-
 
 nav ul li a {
     color: black;
@@ -156,6 +151,8 @@ a:active {
 
 .wrapper {
     min-height: 4%;
+    min-height: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
+
