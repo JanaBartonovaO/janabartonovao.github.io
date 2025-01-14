@@ -1,46 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css" class="css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" class="css" />
     <title>Document</title>
+    <style>
+        .highlight {
+            background-color: rgb(206, 138, 83);
+
+            display: inline;
+        }
+    </style>
+
 </head>
 
 <body>
-    <body style="background-color: rgb(229, 178, 153);"></body>
-    <div id="container">
-        <header>
-            <h1>Vítejte na mých stránkách<h1>
+
+    <div id="container" class="wrapper">
+        <header class="page-header">
+            <h1>Vítejte na mých stránkách</h1>
         </header>
-
-        <main>
+        <main class="page-body">
             <h2>Můj blog o programování a cestování</h2>
-
-            <div id="blog">
-               
-            <ul>
-                <li><a href="blog_1.html">Jak jsem začala s programováním</a></li><br>
-                <li><a href="blog_2.html">Jak se mají maminky po mateřské vypořádat se ztrátou zaměstnání?</a></li>
-            </ul>
+            <div id="foto">
+                <img src="images/obrazek2.jpg" alt="Fotografie Jana"></img>
             </div>
+            <div id="blog">
+            
+                <ul>
+                    <li><a href="blog_1.html">Jak jsem začala s programováním</a></li><br>
+                    <li><a href="blog_2.html">Jak se mají maminky po mateřské vypořádat se ztrátou zaměstnání?</a></li>
+                </ul>
+            </div>
+        </main>
 
-               <div id="foto">         
-            <img src="images/obrazek2.jpg" alt="Fotografie Jana"></img>
-        </div>
+        <div class="page-footer">
             <nav>
                 <ul>
                     <li><a href="index.html">Zpět na hlavní stránku</a></li>
-                 </ul>
+                </ul>
                 <div class="clearfix"></div>
             </nav>
-
-        </main>
-
-        <footer>
-
-        </footer>
+        </div>
     </div>
 </body>
 
