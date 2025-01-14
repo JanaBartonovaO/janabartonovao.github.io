@@ -166,3 +166,9 @@ a:active {
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
+
+#date-time {
+    text-align: center;
+    margin-top: 20px;
+    /* volitelně přidat mezery nahoře */
+}
