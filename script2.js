@@ -64,7 +64,10 @@ document.addEventListener('DOMContentLoaded', function () {
                             size: 8,
                             weight: 'bold'
                         }
-                    }
+                    },
+                    grid: {
+                        display: false
+                    } 
                 },
                 y: {
                     ticks: {
@@ -73,7 +76,11 @@ document.addEventListener('DOMContentLoaded', function () {
                             weight: 'bold'
                         },
                         beginAtZero: true
-                    }
+                    },
+                    grid: {
+                        display: false
+                    } 
+            
                 }
             }
         }
