@@ -174,6 +174,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+console.log(document.getElementById('myChart5'));
+
 
 const ctx5 = document.getElementById('myChart5').getContext('2d');
 new Chart(ctx5, {
