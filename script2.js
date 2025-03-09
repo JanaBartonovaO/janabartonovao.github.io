@@ -175,7 +175,69 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-
-    
-   
-    
+const ctx5 = document.getElementById('myChart5').getContext('2d');
+new Chart(ctx5, {
+    type: 'pie',
+    data: {
+        labels: [
+            "Řemeslníci a kvalifikovaní pracovníci stavební výroby",
+            "Malíři a příbuzní pracovníci",
+            "Montážní dělníci výrobků a zařízení",
+            "Obsluha pojízdných zařízení",
+            "Kuchaři",
+            "Číšníci, servírky, barmani",
+            "Analytici a vývojáři softwaru",
+            "Mistři ve stavebnictví",
+            "Technici ve fyzikálních oborech",
+            "Specialisté ve stavebnictví"
+        ],
+        datasets: [{
+            data: [52800, 32600, 32100, 30500, 28800, 24400, 23600, 22200, 19500, 19300],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.8)',
+                'rgba(54, 162, 235, 0.8)',
+                'rgba(255, 206, 86, 0.8)',
+                'rgba(75, 192, 192, 0.8)',
+                'rgba(153, 102, 255, 0.8)',
+                'rgba(255, 159, 64, 0.8)',
+                'rgba(201, 203, 207, 0.8)',
+                'rgba(23, 123, 207, 0.8)',
+                'rgba(121, 33, 187, 0.8)',
+                'rgba(132, 211, 134, 0.8)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        plugins: {
+            legend: { display: false }, // Opraven překlep
+            title: {
+                display: true,
+                text: 'Počet chybějící pracovní síly v roce 2030 v ČR',
+                font: { size: 16, weight: 'bold' },
+                padding: { top: 10, bottom: 20 }
+            },
+            tooltip: {
+                callbacks: {
+                    label: context => `${context.label}: ${context.raw} pracovníků`
+                },
+                titleFont: {
+                    size: 16,
+                    weight: 'bold'
+                },
+                bodyFont: {
+                    size: 16,
+                    weight: 'normal'
+                },
+                padding: 16,
+                backgroundColor: 'rgba(0,0,0,0.8)',
+                borderColor: 'rgba(255, 255, 255, 0.8)',
+                borderWidth: 1
+            }
+        },
+        scales: {
+            x: { display: false },
+            y: { display: false }
+        }
+    }
+});
